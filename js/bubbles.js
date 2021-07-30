@@ -11,7 +11,7 @@
   function appear() {
     return paths
       .transition()
-      .duration(300)
+      .duration(400)
       .delay((d,i) => 150*(2-i))
       .attr('transform', (d,i,nodes) => scaleCenter(nodes[i], 1))
       .end();

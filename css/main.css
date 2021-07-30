@@ -6,7 +6,10 @@
   margin: 100px 25px;
   padding: 50px 50px 75px 50px;
   position: relative;
-  width: 100%;
+}
+
+.animation svg {
+  max-width: 100%;
 }
 
 .label {
