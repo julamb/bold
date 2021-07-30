@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 50px;
+}
+
+.animation {
+  margin: 25px;
+  padding: 50px 50px 75px 50px;
+  background: #A77BCA;
+  position: relative;
+}
+
+.label {
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 3px;
+  text-align: center;
+}
