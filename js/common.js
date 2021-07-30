@@ -26,7 +26,7 @@ function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function pulse({selection, minDuration, maxDuration, minScale, maxScale}) {
+function pulse(selection, minScale = 0.8, maxScale = 1, minDuration = 2000, maxDuration = 3000) {
 
   selection.each((_,i,nodes) => {
     const node = d3.select(nodes[i]);

@@ -40,6 +40,8 @@
     delay: 50, delayReversed: true,
     svg: d3.select('.animation.head svg')
   }
+
+  makeGradientIdsUnique(options.svg)
   runOnScrollIn(options.svg.node(), () => headAppear(options))
 
 })();

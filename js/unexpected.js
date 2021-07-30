@@ -28,13 +28,7 @@
       .delay((d,i) => symbolOrder.indexOf(i)*duration/symbolOrder.length)
       .attr('transform', function() { return scaleCenter(this, 1); })
       .end()
-      .then(() => pulse({
-        selection: svg.selectAll('path').filter((d,i) => i > 0),
-        minDuration: 1000,
-        maxDuration: 2000,
-        minScale: 0.8,
-        maxScale: 1.2
-      }))
+      .then(() => pulse(svg.selectAll('path').filter((d,i) => i > 0), 0.8, 1.2, 1000, 2000))
   }
 
   const svg = d3.select('.animation.unexpected svg')

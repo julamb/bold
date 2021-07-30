@@ -3,10 +3,10 @@
 }
 
 .animation {
-  margin: 25px;
+  margin: 100px 25px;
   padding: 50px 50px 75px 50px;
-  background: #A77BCA;
   position: relative;
+  width: 100%;
 }
 
 .label {
