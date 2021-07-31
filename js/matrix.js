@@ -30,7 +30,7 @@
           .duration(getRandomArbitrary(500, 2000))
           .ease(d3.easeSinInOut)
           .attr('transform', (d,i,nodes) => scaleCenter(nodes[i], getRandomArbitrary(0.5, 1)))
-          .on('end', pulse)
+          .end().then(pulse)
       }
       pulse();
     })
